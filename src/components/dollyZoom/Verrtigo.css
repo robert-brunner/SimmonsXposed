@@ -1,0 +1,59 @@
+.hitchcock-container * {
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .hitchcock-container .box {
+    position: absolute;
+    perspective: 400px;
+    width: 1150px;
+    height: 878.75px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: perspective 5s;
+  }
+  
+  .hitchcock-container .fore-box {
+    z-index: 10;
+  }
+  
+  .hitchcock-container .bg-box {
+    z-index: 5;
+  }
+  
+  .hitchcock-container .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1150px;
+    height: 878.75px;
+    transition: all 5s;
+  }
+  
+  .hitchcock-container .fore {
+    z-index: 10;
+    background-image: url('./assets/contractorFG.png');
+    background-size: cover;
+  }
+  
+  .hitchcock-container .bg {
+    background-image: url('./assets/cTapeBD.png');
+    transform: translateZ(150px);
+    background-size: cover;
+  }
+  
+  .hitchcock-container .box.on .fore {
+    transform: translateZ(200px);
+  }
+  
+  .hitchcock-container .box.on .bg {
+    transform: translateZ(0);
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+  }
+  
+  .hitchcock-container .ui {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }

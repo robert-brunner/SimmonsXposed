@@ -4,7 +4,8 @@ import React from "react";
 
 const Base = () => {
   return (
-    <div class="relative flex justify-center space-evenly">
+
+    <div name="Pads"class="relative flex justify-center space-evenly">
       <div name="footerShadow" className="">01</div>
       <div name="footerShadow" className="">02</div>
       <div name="footerShadow" className="">03</div>
